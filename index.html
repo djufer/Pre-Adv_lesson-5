@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="block info">
+                <span class="info_item_label">Баланс</span>
+                <div class="info_item balance">
+                    <span class="balance_count count"></span> грн
+                </div>
+                <span class="info_item_label">Пиво</span>
+                <div class="info_item beer">
+                    <span class="beer_count count"></span> шт
+                </div>
+                <span class="info_item_label">Вино</span>
+                <div class="info_item wine">
+                    <span class="wine_count count"></span> шт
+                </div>
+                <span class="info_item_label">Пепсі</span>
+                <div class="info_item pepsi">
+                    <span class="pepsi_count count"></span> шт
+                </div>
+            </div>
+            <div class="block form-block">
+                <form action="">
+                    <span>Кількість</span>
+                    <input class="enter_count" type="number" value="" step="1">
+                    <div class="radio_block">
+                        <input type="radio" name="radio" id="pivo_toggle" value="pivo" checked>
+                        <label for="pivo_toggle">Пиво</label>
+                        <input type="radio" name="radio"  id="wine_toggle" value="wine">
+                        <label for="wine_toggle">Вино</label>
+                        <input type="radio" name="radio"  id="pepsi_toggle" value="pepsi">
+                        <label for="pepsi_toggle">Пепсі</label>
+                    </div>
+                    <input type="button" value="Додати" id="add_button" class="button">
+                    <div class="checked_list"></div>
+                    <input id="buy-button" type="button" value="Купити" class="button">
+                </form>
+            </div>
+            <div class="block check-block">
+            </div>
+        </div>
+
+        <script src="./main.js"></script>
+    </body>
+</html>
